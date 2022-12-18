@@ -1,8 +1,8 @@
-var numberOfDrumButtons = document.querySelectorAll(".drum").length;
+var numberOfDrumButtons = document.querySelectorAll(".drum").length;          //number of class with name drum inside tag
 
 for (var i = 0; i < numberOfDrumButtons; i++) {
 
-  document.querySelectorAll(".drum")[i].addEventListener("click", function() {
+  document.querySelectorAll(".drum")[i].addEventListener("click", function() {        //access to diff class 
 
     var buttonInnerHTML = this.innerHTML;
 
@@ -71,10 +71,10 @@ function buttonAnimation(currentKey) {
 
   var activeButton = document.querySelector("." + currentKey);
 
-  activeButton.classList.add("pressed");
+  activeButton.classList.add("pressed");   //adding new class inside specific tag
 
   setTimeout(function() {
-    activeButton.classList.remove("pressed");
+    activeButton.classList.remove("pressed");   // 100 is timer after which class is removed
   }, 100);
 
 }
